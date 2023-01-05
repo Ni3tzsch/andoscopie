@@ -1,0 +1,16 @@
+@import "./components";
+@import "./import";
+@import "./layouts";
+@import "./responsive";
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Passions+Conflict&display=swap');
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: clamp(50%, 62.5%, 100%);
+}

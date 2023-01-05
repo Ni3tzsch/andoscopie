@@ -1,0 +1,32 @@
+// ANIMATION
+
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+    // opacity: 1;
+    transform-style: preserve-3d;
+  }
+  50% {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    // opacity: 0.1;
+  }
+  to {
+    transform: rotateY(0deg);
+    // opacity: 0;
+    transform-style: preserve-3d;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+    transform: scale(0) translateX(10px);
+    filter: blur(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateX(0px);
+    filter: blur(0);
+  }
+}

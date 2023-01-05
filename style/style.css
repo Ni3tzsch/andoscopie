@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Passions+Conflict&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+.container-1 {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(65deg, rgb(65, 65, 65), rgb(3, 3, 3));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-1 > * {
+  margin: 1.7rem 0;
+}
+.container-2 {
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(65deg, rgb(65, 65, 65), rgb(3, 3, 3));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+  }
+  50% {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+  }
+  to {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+  }
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+    transform: scale(0) translateX(10px);
+    filter: blur(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateX(0px);
+    filter: blur(0);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+  }
+  50% {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+  }
+  to {
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+  }
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+    transform: scale(0) translateX(10px);
+    filter: blur(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateX(0px);
+    filter: blur(0);
+  }
+}
+.container-1 img {
+  width: 20%;
+  display: block;
+  transition: 3s;
+  box-shadow: 0px 0px 1000px 5px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  position: relative;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+  animation-name: rotation;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+}
+@media (max-width: 425px) {
+  .container-1 img {
+    width: 65%;
+  }
+}
+@media (max-width: 768px) {
+  .container-1 img {
+    width: 40%;
+  }
+}
+.container-1 h1 {
+  font-size: 5rem;
+  color: white;
+  font-weight: 900;
+}
+@media (max-width: 425px) {
+  .container-1 h1 {
+    font-size: 3.5rem;
+  }
+}
+.container-1 h4 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: 'Permanent Marker';
+  color: white;
+}
+.container-1 h4 span {
+  color: white;
+  font-family: "Passions Conflict";
+  font-size: 1.2em;
+}
+@media (max-width: 425px) {
+  .container-1 h4 {
+    font-size: 3.5rem;
+  }
+}
+.container-1 p {
+  color: white;
+  font-size: 1.5rem;
+  width: 50%;
+  font-weight: 300;
+  font-style: italic;
+}
+@media (max-width: 425px) {
+  .container-1 p {
+    font-size: 1.2rem;
+    width: 60%;
+  }
+}
+.container-1 h5 {
+  margin-top: 6rem;
+  width: 50%;
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 700;
+}
+@media (max-width: 425px) {
+  .container-1 h5 {
+    font-size: 1rem;
+    width: 70%;
+  }
+}
+.container-1 h5 span {
+  color: rgb(237, 237, 237);
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 0 1rem;
+}
+.container-1 h6 {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.container-1 a button {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  border-radius: 100px;
+  border: 0;
+  color: white;
+  background: linear-gradient(60deg, #a100f2, #8900f2, #6a00f4, #2d00f7);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+@media (max-width: 425px) {
+  .container-1 a button {
+    font-size: 2rem;
+    padding: 1.5rem 2.5rem;
+  }
+}
+.container-1 a button:hover {
+  filter: brightness(1.3);
+  transform: scale(1.05);
+}
+.container-1 a button:active {
+  filter: brightness(1.3);
+  transform: scale(0.99);
+}
+
+.container-2 .header {
+  width: 80%;
+  margin: 1rem auto;
+  text-align: center;
+}
+.container-2 .header h1 {
+  margin: 1rem 0;
+  font-size: 4rem;
+  color: white;
+  font-weight: 900;
+}
+@media (max-width: 425px) {
+  .container-2 .header h1 {
+    font-size: 3.5rem;
+  }
+}
+.container-2 .header h4 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: 'Permanent Marker';
+  color: white;
+}
+.container-2 .header h4 span {
+  color: white;
+  font-family: "Passions Conflict";
+  font-size: 1.2em;
+}
+.container-2 .grid-list {
+  width: 80%;
+  margin: 2rem auto;
+  margin-bottom: 4rem;
+  padding: 1rem;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 4rem;
+}
+.container-2 .grid-list .card {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  max-width: 40rem;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.096);
+}
+.container-2 .grid-list .card h1,
+.container-2 .grid-list .card p {
+  color: #f8f9fa;
+}
+.container-2 .grid-list .card h1 {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-family: "Poppins";
+  font-weight: 900;
+}
+.container-2 .grid-list .card p {
+  font-size: 1.4rem;
+}
+.container-2 .grid-list .card-1 {
+  background: linear-gradient(-60deg, rgba(14, 14, 14, 0.7), rgb(45, 45, 45)), url("../img/1.jpg");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+}
+.container-2 .grid-list .card-2 {
+  background: linear-gradient(-60deg, rgba(20, 109, 251, 0.7), rgb(26, 48, 69)), url("../img/2.jpg");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+}
+.container-2 .grid-list .card-3 {
+  background: linear-gradient(-60deg, rgba(20, 251, 109, 0.7), rgb(26, 69, 51)), url("../img/3.jpeg");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+}
+.container-2 .grid-list .card-4 {
+  background: linear-gradient(-60deg, rgba(251, 20, 20, 0.7), rgb(69, 26, 26)), url("../img/4.jpeg");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 4s;
+}
+.container-2 .grid-list .card-5 {
+  background: linear-gradient(-60deg, rgba(251, 120, 20, 0.7), rgb(69, 42, 26)), url("../img/5.jpeg");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+.container-2 .grid-list .card-6 {
+  background: linear-gradient(-60deg, rgba(201, 20, 251, 0.7), rgb(48, 26, 69)), url("../img/6.webp");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+.container-2 .grid-list .card-7 {
+  background: linear-gradient(-60deg, rgba(251, 20, 197, 0.7), rgb(69, 26, 66)), url("../img/7.jpeg");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+.container-2 .grid-list .card-8 {
+  background: linear-gradient(-60deg, rgba(236, 251, 20, 0.7), rgb(59, 69, 26)), url("../img/8.jpeg");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+.container-2 .grid-list .card-9 {
+  background: linear-gradient(-60deg, rgba(20, 251, 247, 0.7), rgb(26, 69, 55)), url("../img/9.jpeg");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+.container-2 .grid-list .card-10 {
+  background: linear-gradient(-60deg, rgba(55, 251, 20, 0.7), rgb(26, 69, 36)), url("../img/10.jpg");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+.container-2 .grid-list .card-11 {
+  background: linear-gradient(-60deg, rgba(14, 14, 14, 0.7), rgb(45, 45, 45)), url("../img/11.jpg");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+.container-2 .grid-list .card-12 {
+  background: linear-gradient(-60deg, rgba(20, 109, 251, 0.7), rgb(26, 48, 69)), url("../img/12.jpeg");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+.container-2 .grid-list .card-13 {
+  background: linear-gradient(-60deg, rgba(20, 251, 109, 0.7), rgb(26, 69, 51)), url("../img/13.jpeg");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+.container-2 .grid-list .card-14 {
+  background: linear-gradient(-60deg, rgba(251, 20, 20, 0.7), rgb(69, 26, 26)), url("../img/14.jpeg");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+.container-2 .grid-list .card-15 {
+  background: linear-gradient(-60deg, rgba(251, 120, 20, 0.7), rgb(69, 42, 26)), url("../img/15.webp");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+.container-2 .grid-list .card-16 {
+  background: linear-gradient(-60deg, rgba(201, 20, 251, 0.7), rgb(48, 26, 69)), url("../img/16.webp");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+.container-2 .grid-list .card-17 {
+  background: linear-gradient(-60deg, rgba(251, 20, 197, 0.7), rgb(69, 26, 66)), url("../img/17.webp");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+.container-2 .grid-list .card-18 {
+  background: linear-gradient(-60deg, rgba(236, 251, 20, 0.7), rgb(59, 69, 26)), url("../img/18.webp");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+.container-2 .grid-list .card-19 {
+  background: linear-gradient(-60deg, rgba(20, 251, 247, 0.7), rgb(26, 69, 55)), url("../img/19.jpeg");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+.container-2 .grid-list .card-20 {
+  background: linear-gradient(-60deg, rgba(55, 251, 20, 0.7), rgb(26, 69, 36)), url("../img/20.jpeg");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+.container-2 .grid-list .card-21 {
+  background: linear-gradient(-60deg, rgba(14, 14, 14, 0.7), rgb(45, 45, 45)), url("../img/21.jpeg");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+.container-2 .grid-list .card-22 {
+  background: linear-gradient(-60deg, rgba(20, 109, 251, 0.7), rgb(26, 48, 69)), url("../img/22.webp");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+.container-2 .grid-list .card-23 {
+  background: linear-gradient(-60deg, rgba(20, 251, 109, 0.7), rgb(26, 69, 51)), url("../img/23.png");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+.container-2 .grid-list .card-24 {
+  background: linear-gradient(-60deg, rgba(251, 20, 20, 0.7), rgb(69, 26, 26)), url("../img/24.jpeg");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+
+.container-2 .grid-list .card-25 {
+  background: linear-gradient(-60deg, rgba(251, 85, 20, 0.7), rgb(69, 45, 26)), url("../img/25.webp");
+  background-size: cover;
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+}
+
+.container-2 .grid-list .card-26 {
+  background: linear-gradient(-60deg, rgba(255, 255, 255, 0.7), rgb(82, 82, 82)), url("../img/26.avif");
+  background-size: cover;
+  color: #343a40; 
+  background-position: center;
+  animation: opacity;
+  animation-iteration-count: 1;
+  animation-duration: 5s;
+  
+}
+.container-2 .link button {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 2rem 5rem;
+  border-radius: 100px;
+  border: 0;
+  color: white;
+  background: linear-gradient(60deg, #a100f2, #8900f2, #6a00f4, #2d00f7);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.container-2 .link button:hover {
+  filter: brightness(1.3);
+  transform: scale(1.05);
+}
+.container-2 .link button:active {
+  filter: brightness(1.3);
+  transform: scale(0.99);
+}
+.container-2 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.container-2 .footer h5 {
+  width: 50%;
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 700;
+}
+@media (max-width: 425px) {
+  .container-2 .footer h5 {
+    font-size: 1rem;
+    width: 90%;
+  }
+}
+.container-2 .footer h5 span {
+  color: rgb(237, 237, 237);
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 0 1rem;
+}
+.container-2 .footer h6 {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+/*# sourceMappingURL=style.css.map */
